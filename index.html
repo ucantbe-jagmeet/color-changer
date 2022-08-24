@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>BACKGROUND COLOR CHANGER</title>
+</head>
+<body>
+    <button>TAP HERE ...</button>
+    
+
+    <script type="text/javascript" >
+        var color =["#42E2B8","#F3DFBF","#514F59","#F1DABF","#E5D4ED","#92817A","#8BBEB2","#0D0630","#131C40","#EB8A90","#F7B32B","#E3170A","#FCF6B1",];
+
+        var i=0;
+        document.querySelector('button').addEventListener('click',()=>{
+            i=i<color.length ? ++i:0;
+            document.querySelector('body').style.background =color[i];
+            document.querySelector('button').style.background =color[i+1];
+            });
+    </script>
+</body>
